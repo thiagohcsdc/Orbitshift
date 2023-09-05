@@ -1,34 +1,121 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 *{
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'inter';
+    font-family: 'Inter';
+
 }
 
-.main{ 
+.main{
     
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background:  #201b2c;
-
+    background: #201b2c;
 }
+
 .left{
    
     width: 50vw;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
 .left > h1{
     color: #77ffc0;
 }
-img{ max-width: 40%;
+
+img{
+    max-height: 30%;
+    min-height: 30%;
+}
+
+.right{
+    
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20%;
+    box-shadow: 0px 10px 40px #00000056;
 
 }
+
+.card> h1{
+color: #77ffc0;
+font-weight: 800;
+
+}
+.textfield{
+
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px 0;
+   
+}
+
+    input{
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        padding: 15px;
+        background: #514869;
+        color:#f0ffffde;
+        outline: none;
+        font-size: 12pt;
+        box-shadow: 0px 10px 40px #00000056;
+        border: 2px solid transparent;
+
+    }
+    input::placeholder{
+        color: #f0ffff94
+    }
+    input:focus{
+        border-color: #77ffc0;
+    }
+    label{
+      color: #f0ffffde;
+      margin: 5px 0;
+    }
+    .btn-login{
+        width: 100%;
+        margin: 25px;
+        padding: 15px 0;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #2b133b;
+        background: #00ff88;
+        cursor: pointer;
+        letter-spacing: 4px;
+        box-shadow: 0px 10 px 40px #00008052;
+    }
+    .btn-login:hover{
+        transition: background 1s;
+        background: #23b872;
+    }
